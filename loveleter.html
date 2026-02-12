@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Love Letter 💌</title>
+
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Cinzel:wght@400;600&display=swap" rel="stylesheet">
+
+<style>
+body{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+  height:100vh;
+  margin:0;
+  font-family:'Cinzel', serif;
+  background:linear-gradient(to right, #5f0f40, #9a031e);
+  color:#f8e1e7;
+  padding:20px;
+}
+
+.letter-container{
+  background:rgba(0,0,0,0.35);
+  padding:40px;
+  border-radius:15px;
+  box-shadow:0 0 40px rgba(0,0,0,0.4);
+  max-width:700px;
+  backdrop-filter: blur(6px);
+}
+
+h1{
+  font-family:'Great Vibes', cursive;
+  font-size:3.5rem;
+  margin-bottom:30px;
+  color:#ffd6e0;
+}
+
+p{
+  font-size:1.6rem;
+  line-height:2;
+  letter-spacing:1px;
+}
+
+.signature{
+  margin-top:40px;
+  font-family:'Great Vibes', cursive;
+  font-size:2rem;
+  color:#ffc2d1;
+}
+
+button{
+  margin-top:40px;
+  font-size:1.1rem;
+  background: rgba(255,255,255,0.2);
+  border:none;
+  padding:12px 28px;
+  border-radius:30px;
+  color:white;
+  cursor:pointer;
+  transition:0.3s;
+  font-family:'Cinzel', serif;
+}
+
+button:hover{
+  background: rgba(255,255,255,0.4);
+  transform:scale(1.05);
+}
+</style>
+</head>
+
+<body>
+
+<div class="letter-container">
+  <h1>💌 My Dearest Maame Efua 💌</h1>
+
+  <p>
+   Mame Afua, 
+  </p>
+
+  <p>
+    who knew that meeting you two years ago would give me my best friend,
+     my love, and that unforgettable first kiss in class 😊
+  </p>
+
+  <p>
+   Every moment with you is special to me.
+    Happy Valentine’s Day, baby 💕
+  </p>
+
+  <div class="signature">
+    Forever Yours ❤️
+  </div>
+
+  <button onclick="goBack()">← Return to Our Memories</button>
+</div>
+
+<script>
+function goBack(){
+  localStorage.setItem("saidYes", "true");
+  window.location.href="index.html";
+}
+
+</script>
+
+</body>
+</html>
